@@ -1,6 +1,10 @@
 main {
   background-color:#611192;
   height:130px;
+  background-image:linear-gradient(to right,#4c1780, blue)
+}
+body {
+font-family:Comic Sans MS, Comic Sans, cursive;
 }
 header h1 {
   text-align:center;
@@ -29,12 +33,41 @@ header h1 {
 .karta img {
   width: 500px;
   height: 300px;
+  opacity:0.5;
   }
+.reviews {
+   position:relative;
+   top:35px;
+    width: 870px;
+    float: left;
+    margin-left: 30px;
+}
+.review-text::before{
+    content: url("free-icon-correct-1271380.png");
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.review {
+    border-left: 10px double navy;
+    width: 350px;
+    padding-left: 10px;
+}
  .propor img{
   margin-left:160px;
   width: 500px;
   height: 300px;
-   }
+  opacity:0.5;
+ }
+.catalog img:hover{
+  border-radius:30%;
+  border: 6px solid blueviolet;
+  opacity: 1;
+  width: 550px;
+  height: 350px;
+  transition: 0.5s ease-out;
+  padding: 10px;
+}
 .propor p {
    font-size:60px;
   margin-left:250px;
@@ -50,6 +83,7 @@ header h1 {
   margin-left:160px;
   width: 500px;
   height: 300px;
+  opacity:0.5;
 }
 .krolik p {
     font-size:60px;
@@ -57,7 +91,8 @@ header h1 {
 }
 footer {
   background-color:#611192;
-  height:200px;
+  height:600px;
+  background-image:linear-gradient(to right, yellow, orange)
 }
 footer h1 {
   font-size:50px;
@@ -86,7 +121,21 @@ footer h2 {
     border-radius:10px;
     padding:10px
 }
-
+.job a:hover {
+  background-color:black;
+  color:lightgreen;
+  transition:0.5s linear;
+}
+.buy a:hover {
+  background-color:black;
+  color:lightgreen;
+  transition:0.5s linear;
+}
+.bob a:hover {
+  background-color:black;
+  color:lightgreen;
+  transition:0.5s linear;
+}
 .menu{
   display: flex;
 }
@@ -97,17 +146,58 @@ footer h2 {
   .bob a {
      margin-left:350px;
     font-size: 90px;
-    color: black;
+    color:black;
     background-color:lightgreen;
     text-decoration:0px;
     border-radius:10px;
     padding:10px;
   }
-header h2 {
-  font-size:65px;
+header h2:hover {
+  transform:rotate3d(1,2,1,360deg);
+  transition: 3s linear;
+}
+header h2 { 
+  background-image:linear-gradient(to right, #00F5C9, #ff0ad6);
+  opacity:1;
+  height:120px;
+  font-size:80px;
   text-align:center;
-  color: black;
-  background-color:#00F5C9;
   border-radius:10px;
-  padding:10px
+  margin-bottom:30px;
+  padding:10px;
+}
+.lolo {
+  background-image:linear-gradient(to right, #00F5C9, #ff0ad6);
+  border-radius:50%;
+  position: fixed;
+  text-align: center;
+  top: 150px;
+  height:150px;
+  font-size: 15px;
+  width: 150px;
+  background-color: #48036f;
+}
+.loli {
+  position: fixed;
+  bottom:680px;
+  left:25px;
+}
+.review::after {
+    content: url("Star_rating_4_of_5 (1).png");
+    width: 30px;
+    height: 35px;
+    display: block;
+}
+header h2:after{
+  content: url("1642405762_1-papik-pro-p-molniya-stiker-1 (1).png");
+}
+header h2:before{
+  content: url("1642405762_1-papik-pro-p-molniya-stiker-1 (1).png");
+}
+.sale {
+  position: relative;
+  bottom:700px;
+  left:950px;
+  width: 250px;
+  height:200px;
 }
